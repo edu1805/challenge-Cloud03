@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Api", "ChallangeMottu.Api\ChallangeMottu.Api.csproj", "{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hallangeMottu.Application", "hallangeMottu.Application\hallangeMottu.Application.csproj", "{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Domain", "ChallangeMottu.Domain\ChallangeMottu.Domain.csproj", "{51455551-3481-4463-AD5E-1A0A082B2028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Infrastructure", "ChallangeMottu.Infrastructure\ChallangeMottu.Infrastructure.csproj", "{46EEE220-ED13-421D-918B-14BA7F6E5806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51455551-3481-4463-AD5E-1A0A082B2028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51455551-3481-4463-AD5E-1A0A082B2028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51455551-3481-4463-AD5E-1A0A082B2028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51455551-3481-4463-AD5E-1A0A082B2028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46EEE220-ED13-421D-918B-14BA7F6E5806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46EEE220-ED13-421D-918B-14BA7F6E5806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46EEE220-ED13-421D-918B-14BA7F6E5806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46EEE220-ED13-421D-918B-14BA7F6E5806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
