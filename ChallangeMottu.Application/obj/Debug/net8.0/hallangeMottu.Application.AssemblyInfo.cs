@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ChallangeMottu.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("hallangeMottu.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0eadbe6caaa3da3f917918f3ae7a9e025a94ba41")]
-[assembly: System.Reflection.AssemblyProductAttribute("ChallangeMottu.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ChallangeMottu.Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("hallangeMottu.Application")]
+[assembly: System.Reflection.AssemblyTitleAttribute("hallangeMottu.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

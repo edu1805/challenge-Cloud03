@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Api", "ChallangeMottu.Api\ChallangeMottu.Api.csproj", "{E47A790B-7C56-49C3-9CFB-024FFF0EECC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hallangeMottu.Application", "hallangeMottu.Application\hallangeMottu.Application.csproj", "{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Application", "ChallangeMottu.Application\ChallangeMottu.Application.csproj", "{FE01A3E3-2CA4-4FDE-B15D-CD0CD41AF389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeMottu.Domain", "ChallangeMottu.Domain\ChallangeMottu.Domain.csproj", "{51455551-3481-4463-AD5E-1A0A082B2028}"
 EndProject
