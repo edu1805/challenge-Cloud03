@@ -1,0 +1,12 @@
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\bin\Debug\net8.0\ChallangeMottu.Domain.deps.json
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\bin\Debug\net8.0\ChallangeMottu.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\bin\Debug\net8.0\ChallangeMottu.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.AssemblyInfoInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.AssemblyInfo.cs
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.sourcelink.json
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\refint\ChallangeMottu.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ChallangeMottu.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Domain\obj\Debug\net8.0\ref\ChallangeMottu.Domain.dll

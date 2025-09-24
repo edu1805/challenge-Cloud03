@@ -2,11 +2,11 @@ using AutoMapper;
 using ChallangeMottu.Application;
 using ChallangeMottu.Domain;
 
-namespace hallangeMottu.Application.Mappings;
+namespace ChallangeMottu.Application.Mappings;
 
-public class Motoprofile : Profile
+public class MotoProfile : Profile
 {
-    public Motoprofile()
+    public MotoProfile()
     {
         CreateMap<Moto, MotoDto>().ReverseMap();
 

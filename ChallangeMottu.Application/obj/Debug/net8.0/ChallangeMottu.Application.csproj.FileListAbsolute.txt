@@ -1,0 +1,16 @@
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\bin\Debug\net8.0\ChallangeMottu.Application.deps.json
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\bin\Debug\net8.0\ChallangeMottu.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\bin\Debug\net8.0\ChallangeMottu.Application.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\bin\Debug\net8.0\ChallangeMottu.Domain.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\bin\Debug\net8.0\ChallangeMottu.Domain.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.csproj.AssemblyReference.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.AssemblyInfoInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.AssemblyInfo.cs
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.csproj.CoreCompileInputs.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.sourcelink.json
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\Challang.63AB9918.Up2Date
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\refint\ChallangeMottu.Application.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ChallangeMottu.Application.pdb
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Application\obj\Debug\net8.0\ref\ChallangeMottu.Application.dll

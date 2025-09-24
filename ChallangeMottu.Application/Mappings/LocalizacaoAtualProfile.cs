@@ -2,7 +2,7 @@ using AutoMapper;
 using ChallangeMottu.Application;
 using ChallangeMottu.Domain;
 
-namespace hallangeMottu.Application.Mappings;
+namespace ChallangeMottu.Application.Mappings;
 
 public class LocalizacaoAtualProfile : Profile
 {

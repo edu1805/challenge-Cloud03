@@ -3,7 +3,7 @@ namespace ChallangeMottu.Domain;
 public class LocalizacaoAtual
 {
     public Guid Id { get; private set; } = Guid.NewGuid();
-    public int MotoId { get; private set; }
+    public Guid MotoId { get; private set; }
     
     public Moto Moto { get; private set; }
     public double CoordenadaX { get; private set; }
@@ -13,7 +13,7 @@ public class LocalizacaoAtual
 
     private LocalizacaoAtual() { }
 
-    public LocalizacaoAtual(int motoId, double coordenadaX, double coordenadaY)
+    public LocalizacaoAtual(Guid motoId, double coordenadaX, double coordenadaY)
     {
         Validar(motoId, coordenadaX, coordenadaY);
 
@@ -32,9 +32,9 @@ public class LocalizacaoAtual
         DataHoraAtualizacao = DateTime.UtcNow;
     }
 
-    private void Validar(int motoId, double coordenadaX, double coordenadaY)
+    private void Validar(Guid motoId, double coordenadaX, double coordenadaY)
     {
-        if (motoId <= 0)
+        if (motoId == Guid.Empty)
             throw new ArgumentException("MotoId inválido.");
 
         if (coordenadaX < 0 || coordenadaY < 0)

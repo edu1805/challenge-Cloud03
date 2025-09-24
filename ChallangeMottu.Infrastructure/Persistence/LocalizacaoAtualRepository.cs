@@ -13,10 +13,10 @@ public class LocalizacaoAtualRepository : ILocalizacaoAtualRepository
         _context = context;
     }
 
-    public async Task<LocalizacaoAtual> ObterPorMotoIdAsync(int motoId)
+    public async Task<LocalizacaoAtual> ObterPorMotoIdAsync(Guid motoId)
     {
         return await _context.LocalizacoesAtuais
-            .FirstOrDefaultAsync(l => l.MotoId == motoId);
+            .FirstOrDefaultAsync(l => l.MotoId == Guid.Empty);
     }
 
     public async Task<IEnumerable<LocalizacaoAtual>> ListarTodasAsync()
