@@ -9,22 +9,22 @@
             Lista todas as motos ou filtra por status.
             </summary>
         </member>
-        <member name="M:ChallangeMottu.Api.Controllers.MotoController.GetById(System.Int32)">
+        <member name="M:ChallangeMottu.Api.Controllers.MotoController.GetById(System.Guid)">
             <summary>
             Obtém uma moto por ID.
             </summary>
         </member>
-        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Create(ChallangeMottu.Application.CreateMotoDto)">
+        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Create(ChallangeMottu.Application.CreateMotoDto,ChallangeMottu.Application.Validators.CreateMotoDtoValidator)">
             <summary>
             Cria uma nova moto.
             </summary>
         </member>
-        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Update(System.Int32,ChallangeMottu.Application.UpdateMotoDto)">
+        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Update(System.Guid,ChallangeMottu.Application.UpdateMotoDto)">
             <summary>
             Atualiza uma moto existente.
             </summary>
         </member>
-        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Delete(System.Int32)">
+        <member name="M:ChallangeMottu.Api.Controllers.MotoController.Delete(System.Guid)">
             <summary>
             Deleta uma moto.
             </summary>

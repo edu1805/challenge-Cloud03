@@ -19,7 +19,7 @@ public class MotoRepository : IMotoRepository
         return await _context.Motos.ToListAsync();
     }
 
-    public async Task<Moto?> GetByIdAsync(int id)
+    public async Task<Moto?> GetByIdAsync(Guid id)
     {
         return await _context.Motos.FindAsync(id);
     }

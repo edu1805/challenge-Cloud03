@@ -13,7 +13,7 @@ public class LocalizacaoAtualDto
     /// <summary>
     /// ID da moto associada.
     /// </summary>
-    public int MotoId { get; set; }
+    public Guid MotoId { get; set; }
 
     /// <summary>
     /// Coordenada X da moto no pátio.

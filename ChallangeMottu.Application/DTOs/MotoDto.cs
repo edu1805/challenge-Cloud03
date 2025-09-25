@@ -8,7 +8,7 @@ public class MotoDto
     /// <summary>
     /// Identificador da moto.
     /// </summary>
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     /// <summary>
     /// Placa da moto.

@@ -28,7 +28,7 @@ public class MotoService : IMotoService
         return _mapper.Map<IEnumerable<MotoDto>>(motos);
     }
 
-    public async Task<MotoDto?> BuscarPorIdAsync(int id)
+    public async Task<MotoDto?> BuscarPorIdAsync(Guid id)
     {
         var moto = await _motoRepository.GetByIdAsync(id);
         return moto == null ? null : _mapper.Map<MotoDto>(moto);
@@ -44,7 +44,7 @@ public class MotoService : IMotoService
         return _mapper.Map<MotoDto>(novaMoto);
     }
 
-    public async Task<bool> AtualizarAsync(int id, UpdateMotoDto dto)
+    public async Task<bool> AtualizarAsync(Guid id, UpdateMotoDto dto)
     {
         var moto = await _motoRepository.GetByIdAsync(id);
         if (moto == null) return false;
@@ -58,7 +58,7 @@ public class MotoService : IMotoService
         return true;
     }
 
-    public async Task<bool> DeletarAsync(int id)
+    public async Task<bool> DeletarAsync(Guid id)
     {
         var moto = await _motoRepository.GetByIdAsync(id);
         if (moto == null) return false;

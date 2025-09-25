@@ -8,7 +8,7 @@ public class CriarLocalizacaoAtualDto
     /// <summary>
     /// ID da moto.
     /// </summary>
-    public int MotoId { get; set; }
+    public Guid MotoId { get; set; }
 
     /// <summary>
     /// Coordenada X.

@@ -5,7 +5,7 @@ namespace ChallangeMottu.Domain.Interfaces;
 public interface IMotoRepository
 {
     Task<IEnumerable<Moto>> GetAllAsync();
-    Task<Moto?> GetByIdAsync(int id);
+    Task<Moto?> GetByIdAsync(Guid id);
     Task<IEnumerable<Moto>> FindAsync(Expression<Func<Moto, bool>> predicate);
     Task AddAsync(Moto moto);
     void Update(Moto moto);

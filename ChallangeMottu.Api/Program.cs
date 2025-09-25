@@ -2,11 +2,17 @@ using System.Reflection;
 using ChallangeMottu.Application;
 using ChallangeMottu.Infrastructure;
 using ChallangeMottu.Application.Mappings;
+using ChallangeMottu.Application.Validators;
+using FluentValidation;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateMotoDtoValidator>();
+// builder.Services.AddFluentValidationAutoValidation();
+// builder.Services.AddFluentValidationClientsideAdapters();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();

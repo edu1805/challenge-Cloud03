@@ -1,6 +1,8 @@
 using ChallangeMottu.Application;
 using ChallangeMottu.Application.UseCase;
+using ChallangeMottu.Application.Validators;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace ChallangeMottu.Api.Controllers;
@@ -38,7 +40,7 @@ public class MotoController : ControllerBase
     [SwaggerOperation(Summary = "Buscar moto por ID", Description = "Retorna uma moto específica pelo ID.")]
     [SwaggerResponse(200, "Moto encontrada", typeof(MotoDto))]
     [SwaggerResponse(404, "Moto não encontrada")]
-    public async Task<ActionResult<MotoDto>> GetById(int id)
+    public async Task<ActionResult<MotoDto>> GetById(Guid id)
     {
         var moto = await _motoService.BuscarPorIdAsync(id);
         if (moto == null) return NotFound();
@@ -53,17 +55,23 @@ public class MotoController : ControllerBase
     [SwaggerOperation(Summary = "Criar moto", Description = "Cria uma nova moto com os dados informados.")]
     [SwaggerResponse(201, "Moto criada com sucesso", typeof(MotoDto))]
     [SwaggerResponse(400, "Dados inválidos")]
-    public async Task<ActionResult<MotoDto>> Create([FromBody] CreateMotoDto dto)
+    public async Task<ActionResult<MotoDto>> Create(
+        [FromBody] CreateMotoDto dto,
+        [FromServices] CreateMotoDtoValidator validator)
     {
-        try
+        var result = await validator.ValidateAsync(dto);
+
+        if (!result.IsValid)
         {
-            var result = await _motoService.CriarAsync(dto);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            var modelState = new ModelStateDictionary();
+            foreach (var failure in result.Errors)
+                modelState.AddModelError(failure.PropertyName, failure.ErrorMessage);
+
+            return ValidationProblem(modelState);
         }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(new { erro = ex.Message });
-        }
+
+        var moto = await _motoService.CriarAsync(dto);
+        return CreatedAtAction(nameof(GetById), new { id = moto.Id }, moto);
     }
 
     /// <summary>
@@ -73,7 +81,7 @@ public class MotoController : ControllerBase
     [SwaggerOperation(Summary = "Atualizar moto", Description = "Atualiza os dados de uma moto existente.")]
     [SwaggerResponse(204, "Moto atualizada com sucesso")]
     [SwaggerResponse(404, "Moto não encontrada")]
-    public async Task<ActionResult> Update(int id, [FromBody] UpdateMotoDto dto)
+    public async Task<ActionResult> Update(Guid id, [FromBody] UpdateMotoDto dto)
     {
         var atualizado = await _motoService.AtualizarAsync(id, dto);
         if (!atualizado) return NotFound();
@@ -88,7 +96,7 @@ public class MotoController : ControllerBase
     [SwaggerOperation(Summary = "Deletar moto", Description = "Remove uma moto do sistema.")]
     [SwaggerResponse(204, "Moto deletada com sucesso")]
     [SwaggerResponse(404, "Moto não encontrada")]
-    public async Task<ActionResult> Delete(int id)
+    public async Task<ActionResult> Delete(Guid id)
     {
         var deletado = await _motoService.DeletarAsync(id);
         if (!deletado) return NotFound();

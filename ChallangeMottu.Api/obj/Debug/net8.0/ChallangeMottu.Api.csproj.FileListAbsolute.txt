@@ -250,3 +250,4 @@ C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\Challan
 C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Api\bin\Debug\net8.0\ChallangeMottu.Api.xml
 C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Api\obj\Debug\net8.0\ChallangeMottu.Api.xml
 C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Home\OneDrive\Área de Trabalho\Challenge\dotnet\ChallangeMottu\ChallangeMottu.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
