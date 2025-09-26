@@ -8,7 +8,7 @@ public static class DependencyInjection
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         services.AddScoped<IMotoService, MotoService>();
-        // services.AddScoped<ILocalizacaoAtualService, LocalizacaoAtualService>();
+        services.AddScoped<ILocalizacaoAtualService, LocalizacaoAtualService>();
         
         return services;
     }

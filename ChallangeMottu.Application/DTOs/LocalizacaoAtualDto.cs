@@ -8,7 +8,7 @@ public class LocalizacaoAtualDto
     /// <summary>
     /// Identificador da localização.
     /// </summary>
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     /// <summary>
     /// ID da moto associada.

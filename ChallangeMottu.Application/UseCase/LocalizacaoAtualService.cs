@@ -3,7 +3,7 @@ using ChallangeMottu.Domain.Interfaces;
 
 namespace ChallangeMottu.Application.UseCase;
 
-public class LocalizacaoAtualService
+public class LocalizacaoAtualService : ILocalizacaoAtualService
 {
     private readonly ILocalizacaoAtualRepository _localizacaoRepo;
 
