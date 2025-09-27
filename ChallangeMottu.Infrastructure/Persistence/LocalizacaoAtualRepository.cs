@@ -16,7 +16,7 @@ public class LocalizacaoAtualRepository : ILocalizacaoAtualRepository
     public async Task<LocalizacaoAtual> ObterPorMotoIdAsync(Guid motoId)
     {
         return await _context.LocalizacoesAtuais
-            .FirstOrDefaultAsync(l => l.MotoId == Guid.Empty);
+            .FirstOrDefaultAsync(l => l.MotoId == motoId);
     }
 
     public async Task<IEnumerable<LocalizacaoAtual>> ListarTodasAsync()

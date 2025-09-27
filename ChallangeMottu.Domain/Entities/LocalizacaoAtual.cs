@@ -37,10 +37,10 @@ public class LocalizacaoAtual
         if (motoId == Guid.Empty)
             throw new ArgumentException("MotoId inválido.");
 
-        if (coordenadaX < 0 || coordenadaY < 0)
-            throw new ArgumentException("Coordenadas não podem ser negativas.");
+        if (double.IsNaN(coordenadaX) || double.IsInfinity(coordenadaX))
+            throw new ArgumentException("Coordenada X inválida.");
 
-        if (coordenadaX > 1000 || coordenadaY > 1000)
-            throw new ArgumentException("Coordenadas fora do limite permitido.");
+        if (double.IsNaN(coordenadaY) || double.IsInfinity(coordenadaY))
+            throw new ArgumentException("Coordenada Y inválida.");
     }
 }
