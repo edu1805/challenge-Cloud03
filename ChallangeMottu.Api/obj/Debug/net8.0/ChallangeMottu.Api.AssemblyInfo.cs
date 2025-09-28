@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChallangeMottu.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+464c89b7304accbaee45220417a010d4be3f7417")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+306a55b870d90e199a33b6f8ab8e5e6849737ef3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChallangeMottu.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChallangeMottu.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
