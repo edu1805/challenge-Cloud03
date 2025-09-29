@@ -84,7 +84,8 @@ public class UsuarioController : ControllerBase
     {
         var atualizado = await _usuarioService.AtualizarAsync(id, dto);
         if (atualizado == null) return NotFound();
-        return Ok(atualizado);
+        
+        return NoContent();
     }
 
     /// <summary>

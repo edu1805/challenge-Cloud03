@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChallangeMottu.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+784fa99cc715cebcf0bf4c5bb483c9062a5a125b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4356bfbd9b060d3a7802b6db2cf82e88d0e40950")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChallangeMottu.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChallangeMottu.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

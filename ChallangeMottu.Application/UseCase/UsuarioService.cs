@@ -54,7 +54,7 @@ public class UsuarioService : IUsuarioService
                 throw new ArgumentException("Essa moto já está associada a outro usuário.");
         }
 
-        usuario.AtualizarDados(dto.Nome, dto.Email);
+        usuario.AtualizarDados(dto.Nome, dto.Email, dto.MotoId);
 
         await _usuarioRepository.AtualizarAsync(usuario);
         return _mapper.Map<UsuarioDto>(usuario);

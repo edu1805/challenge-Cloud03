@@ -32,7 +32,7 @@ public class Usuario
         MotoId = moto?.Id;
     }
     
-    public void AtualizarDados(string nome, string email)
+    public void AtualizarDados(string nome, string email, Guid? motoId)
     {
         if (string.IsNullOrWhiteSpace(nome))
             throw new ArgumentException("Nome é obrigatório.");
@@ -41,5 +41,6 @@ public class Usuario
 
         Nome = nome;
         Email = email;
+        MotoId = motoId;
     }
 }
