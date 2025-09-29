@@ -29,5 +29,30 @@
             Deleta uma moto.
             </summary>
         </member>
+        <member name="M:ChallangeMottu.Api.Controllers.UsuarioController.GetAll">
+            <summary>
+            Lista todos os usuários.
+            </summary>
+        </member>
+        <member name="M:ChallangeMottu.Api.Controllers.UsuarioController.GetById(System.Guid)">
+            <summary>
+            Obtém um usuário por ID.
+            </summary>
+        </member>
+        <member name="M:ChallangeMottu.Api.Controllers.UsuarioController.Create(ChallangeMottu.Application.CreateUsuarioDto,ChallangeMottu.Application.Validators.CreateUsuarioDtoValidator)">
+            <summary>
+            Cria um novo usuário.
+            </summary>
+        </member>
+        <member name="M:ChallangeMottu.Api.Controllers.UsuarioController.Update(System.Guid,ChallangeMottu.Application.UpdateUsuarioDto)">
+            <summary>
+            Atualiza um usuário existente.
+            </summary>
+        </member>
+        <member name="M:ChallangeMottu.Api.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            Deleta um usuário.
+            </summary>
+        </member>
     </members>
 </doc>

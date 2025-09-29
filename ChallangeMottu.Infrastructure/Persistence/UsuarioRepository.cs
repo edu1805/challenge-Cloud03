@@ -45,4 +45,11 @@ public class UsuarioRepository : IUsuarioRepository
         await _context.SaveChangesAsync();
     }
     
+    public async Task<Usuario?> ObterPorMotoIdAsync(Guid motoId)
+    {
+        return await _context.Usuario
+            .Include(u => u.Moto)
+            .FirstOrDefaultAsync(u => u.MotoId == motoId);
+    }
+    
 }

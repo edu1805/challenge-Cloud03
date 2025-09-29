@@ -7,4 +7,5 @@ public interface IUsuarioRepository
     Task AdicionarAsync(Usuario usuario);
     Task AtualizarAsync(Usuario usuario);
     Task DeletarAsync(Usuario usuario);
+    Task<Usuario?> ObterPorMotoIdAsync(Guid motoId);
 }

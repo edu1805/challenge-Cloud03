@@ -18,6 +18,7 @@ public static class DependencyInjection
         
         services.AddScoped<IMotoRepository, MotoRepository>();
         services.AddScoped<ILocalizacaoAtualRepository, LocalizacaoAtualRepository>();
+        services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
         return services;
     }

@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddValidatorsFromAssemblyContaining<CreateMotoDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateUsuarioDtoValidator>();
 // builder.Services.AddFluentValidationAutoValidation();
 // builder.Services.AddFluentValidationClientsideAdapters();
 
@@ -37,7 +38,7 @@ builder.Services.AddSwaggerGen(swagger =>
 });
 
 // AutoMapper
-builder.Services.AddAutoMapper(typeof(MotoProfile), typeof(LocalizacaoAtualProfile));
+builder.Services.AddAutoMapper(typeof(MotoProfile), typeof(LocalizacaoAtualProfile), typeof(UsuarioProfile));
 
 // --- Registrar camadas via DI ---
 builder.Services.AddInfrastructure(builder.Configuration); // DbContext + Repositories

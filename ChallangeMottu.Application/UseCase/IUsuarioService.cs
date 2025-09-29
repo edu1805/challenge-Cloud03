@@ -1,3 +1,5 @@
+using ChallangeMottu.Domain;
+
 namespace ChallangeMottu.Application.UseCase;
 
 public interface IUsuarioService

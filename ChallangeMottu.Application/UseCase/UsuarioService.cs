@@ -29,6 +29,13 @@ public class UsuarioService : IUsuarioService
 
     public async Task<UsuarioDto> CriarAsync(CreateUsuarioDto dto)
     {
+        if (dto.MotoId.HasValue)
+        {
+            var motoEmUso = await _usuarioRepository.ObterPorMotoIdAsync(dto.MotoId.Value);
+            if (motoEmUso != null)
+                throw new ArgumentException("Essa moto já está associada a outro usuário.");
+        }
+        
         var usuario = _mapper.Map<Usuario>(dto);
         await _usuarioRepository.AdicionarAsync(usuario);
         return _mapper.Map<UsuarioDto>(usuario);
@@ -39,8 +46,14 @@ public class UsuarioService : IUsuarioService
         var usuario = await _usuarioRepository.ObterPorIdAsync(id);
         if (usuario == null)
             return null;
+        
+        if (dto.MotoId.HasValue)
+        {
+            var outroUsuario = await _usuarioRepository.ObterPorMotoIdAsync(dto.MotoId.Value);
+            if (outroUsuario != null && outroUsuario.Id != id)
+                throw new ArgumentException("Essa moto já está associada a outro usuário.");
+        }
 
-        // Atualizar os campos
         usuario.AtualizarDados(dto.Nome, dto.Email);
 
         await _usuarioRepository.AtualizarAsync(usuario);
