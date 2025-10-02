@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChallangeMottu.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4356bfbd9b060d3a7802b6db2cf82e88d0e40950")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de18a3cf8ab5e8c6567f00bfceeb87d740594b07")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChallangeMottu.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChallangeMottu.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
