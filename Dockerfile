@@ -19,15 +19,3 @@ COPY --from=build /app/publish ./
 EXPOSE 5000
 ENV ASPNETCORE_URLS=http://+:5000
 ENTRYPOINT ["dotnet", "ChallangeMottu.Api.dll"]
-```
-
-## Atualizar .dockerignore
-```
-**/bin/
-**/obj/
-**/.vs/
-**/.vscode/
-**/.git/
-**/.gitignore
-**/nuget.config
-**/NuGet.Config
