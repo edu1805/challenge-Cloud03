@@ -10,24 +10,14 @@ COPY ChallangeMottu.Domain/ChallangeMottu.Domain.csproj ChallangeMottu.Domain/
 COPY ChallangeMottu.Infrastructure/ChallangeMottu.Infrastructure.csproj ChallangeMottu.Infrastructure/
 
 # Restaurar dependências
-RUN dotnet restore --verbosity detailed
+RUN dotnet restore
 
 # Copiar o restante do código
 COPY . .
 
-# Limpar completamente obj e bin
-RUN powershell -Command "$ErrorActionPreference = 'SilentlyContinue'; Get-ChildItem -Path . -Include bin,obj -Recurse -Directory | ForEach-Object { Remove-Item $_.FullName -Recurse -Force }"
-
-# Verificar estrutura de diretórios
-RUN dir /s /b *.csproj
-
-# Publicar sem gerar documentação primeiro (para isolar o problema)
+# Publicar a API (tudo em uma linha)
 WORKDIR /src
-RUN dotnet publish ChallangeMottu.Api/ChallangeMottu.Api.csproj ^
-    -c Release ^
-    -o /app/publish ^
-    --no-restore ^
-    --verbosity detailed
+RUN dotnet publish ChallangeMottu.Api/ChallangeMottu.Api.csproj -c Release -o /app/publish --no-restore
 
 # Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-windowsservercore-ltsc2022 AS runtime
