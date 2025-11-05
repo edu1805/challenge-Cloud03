@@ -1,5 +1,5 @@
 # Etapa de build
-FROM mcr.microsoft.com/dotnet/sdk:8.0-nanoserver-ltsc2022 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copiar arquivos da solução e projetos
@@ -10,23 +10,22 @@ COPY ChallangeMottu.Domain/ChallangeMottu.Domain.csproj ChallangeMottu.Domain/
 COPY ChallangeMottu.Infrastructure/ChallangeMottu.Infrastructure.csproj ChallangeMottu.Infrastructure/
 
 # Restaurar dependências
-RUN dotnet restore --no-cache
+RUN dotnet restore
 
 # Copiar o restante do código
 COPY . .
 
-# Verificar versão do .NET SDK (opcional para debug)
-RUN dotnet --version
-
 # Publicar a API
-WORKDIR /src/ChallangeMottu.Api
-RUN dotnet publish -c Release -o /app/publish \
+WORKDIR /src
+RUN dotnet publish ChallangeMottu.Api/ChallangeMottu.Api.csproj \
+    -c Release \
+    -o /app/publish \
+    --no-restore \
     /p:GenerateDocumentationFile=true \
-    /p:DocumentationFile=/app/publish/ChallangeMottu.Api.xml \
-    --verbosity detailed
+    /p:DocumentationFile=/app/publish/ChallangeMottu.Api.xml
 
 # Etapa de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-ltsc2022 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 # Copiar a publicação
@@ -35,9 +34,9 @@ COPY --from=build /app/publish ./
 # Configurações da API
 EXPOSE 5000
 ENV ASPNETCORE_URLS=http://+:5000
-ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_ENVIRONMENT=Production
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
 
 # Executar a API
-CMD ["dotnet", "ChallangeMottu.Api.dll"]
+ENTRYPOINT ["dotnet", "ChallangeMottu.Api.dll"]
