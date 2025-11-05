@@ -1,5 +1,5 @@
 # Etapa de build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-nanoserver-ltsc2022 AS build
 WORKDIR /src
 
 # Copiar arquivos da solução
@@ -24,7 +24,7 @@ RUN dotnet publish -c Release -o /app/publish \
     /p:DocumentationFile=/app/publish/ChallangeMottu.Api.xml
 
 # Etapa de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-ltsc2022 AS runtime
 WORKDIR /app
 
 # Criar usuário não-root
@@ -32,7 +32,7 @@ RUN addgroup --system --gid 1000 appuser && \
     adduser --system --uid 1000 --ingroup appuser --disabled-password appuser
 
 # Copiar publicação
-COPY --from=build --chown=appuser:appuser /app/publish .
+COPY --from=build --chown=appuser:appuser /app/publish ./
 
 # Configurações da API
 EXPOSE 5000
